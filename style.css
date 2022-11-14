@@ -1,1 +1,164 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Sono', sans-serif;
+    background: #CAE9FF;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px;
+    font-size: 70px;
+    color: #1B4965;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    font-family: 'Sono', sans-serif;
+    color: #1B4965;
+    background: #62B6CB;
+}
+
+/* Options div */
+.playerOptions {
+    margin: 70px;
+}
+
+.playButton {
+    padding: 100px;
+    margin: 70px;
+    border-radius: 50%;
+    color: #1B4965;
+    cursor: pointer;
+    font-size: 30px;
+    transition: .3s;
+    font-weight: bolder;
+    box-shadow: 1px 2px 2px rgb(83, 83, 83);
+    border: none;
+}
+
+.playButton:hover {
+    background: #BEE9E8;
+    color: #1B4965;
+    box-shadow: 2px 5px 5px rgb(83, 83, 83);
+}
+
+/* Name input */
+.chooseName {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 10px;
+    font-family: 'Sono', sans-serif;
+    color: #1B4965;
+    border-radius: 100px;
+    border: none;
+    text-align: center;
+}
+
+.submitButton {
+    color: #1B4965;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: .3s;
+    font-weight: bolder;
+    background: #62B6CB;
+    border: none;
+}
+
+.submitButton:hover {
+    background: #BEE9E8;
+    color: #1B4965;
+    box-shadow: 2px 5px 5px rgb(83, 83, 83);
+}
+
+/* Username Output */
+.usernameOutput {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+p {
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* Board div itself */
+.gameBoard {
+    height: 500px;
+    width: 500px;
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Want board hidden at first */
+.hidden {
+    display: none;
+}
+
+/* Represents all individual cells in the board */
+.cell {
+    height: 167px;
+    width: 166.5px;
+    border: 4px solid #1B4965;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: #5FA8D3;
+}
+
+/* First 3 cells */
+.cell:nth-child(-n+3) {
+    border-top: none;
+    border-color: #1B4965;
+}
+
+/* Last 3 cells */
+.cell:nth-last-child(-n+3) {
+    border-bottom: none;
+    border-color: #1B4965;
+}
+
+/* First column of board */
+.cell:nth-child(3n + 1) {
+    border-left: none;
+    border-color: #1B4965;
+}
+
+/* Last column of board */
+.cell:nth-child(3n + 3) {
+    border-right: none;
+    border-color: #1B4965;
+}
+
+/* Reset button */
+.reset {
+    width: 100%;
+    padding: 10px;
+    font-size: 30px;
+    color: #1B4965;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: .3s;
+    font-weight: bolder;
+    background: #62B6CB;
+    border: none;
+}
+
+.reset:hover {
+    background: #BEE9E8;
+    color: #1B4965;
+    box-shadow: 2px 5px 5px rgb(83, 83, 83);
+}

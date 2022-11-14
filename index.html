@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono&display=swap" rel="stylesheet">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <header>
+        <h1>Tic Tac Toe</h1>
+    </header>
 
+    <main>
+        <div class="playerOptions">
+            <!-- <button id="onePlayer">Single Player</button>
+            <button id="twoPlayer">Multiplayer</button> -->
+            <button class="playButton">Play Game</button>
+        </div>
+        <div class="chooseName hidden">
+            <label for="playerOneName">Choose a name for player one: </label>
+            <input type="text" id="playerOneName" name="playerOneName">
+            <label for="playerTwoName">Choose a name for player two:</label>
+            <input type="text" id="playerTwoName" name="playerTwoName">
+            <input type="submit" value="Enter" class="submitButton">
+        </div>
+        <div class="board hidden">
+            <div class="usernameOutput">
+                <p class="playerOneOutput"></p>
+                <p class="playerTwoOutput"></p>
+            </div>
+            <div class="gameBoard"></div>
+            <button class="reset">Play Again</button>
+        </div>
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>
