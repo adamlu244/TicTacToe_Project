@@ -20,6 +20,10 @@ main {
     align-items: center;
 }
 
+h2 {
+    color: #1B4965;
+}
+
 button {
     font-family: 'Sono', sans-serif;
     color: #1B4965;
